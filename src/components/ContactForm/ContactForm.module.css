@@ -1,0 +1,23 @@
+.formWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 15px;;
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: left;
+    font-size: 20px;
+    
+}
+
+.button{
+   width: 120px;
+}

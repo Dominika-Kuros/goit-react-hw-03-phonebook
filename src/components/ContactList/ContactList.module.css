@@ -1,0 +1,13 @@
+.list{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    list-style: circle;
+}
+
+.item{
+    display: flex;
+    gap: 10px;
+    list-style: circle;
+    
+}
