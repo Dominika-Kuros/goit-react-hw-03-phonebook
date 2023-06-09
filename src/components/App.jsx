@@ -27,16 +27,16 @@ export class App extends Component {
 
     contactExists
       ? alert(`${name} is already in contacts`)
-      : this.setState(prevState => {
-          const list = [...prevState.contacts];
-          list.push({
-            id: nanoid(),
-            name: name,
-            number: number,
-          });
-
-          return { contacts: list };
-        });
+      : this.setState(prevState => ({
+          contacts: [
+            ...prevState.contacts,
+            {
+              id: nanoid(),
+              name: name,
+              number: number,
+            },
+          ],
+        }));
   };
 
   displayedContactList = () => {
